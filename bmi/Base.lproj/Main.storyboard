@@ -65,6 +65,14 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Click">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="42"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clacBmi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6cf-JV-lfU"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J0G-nb-qqa">
                                 <rect key="frame" x="87" y="469" width="240" height="128"/>
@@ -75,6 +83,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="lblResult" destination="Gp1-ci-pXW" id="zyB-8P-Z8U"/>
+                        <outlet property="txtHeight" destination="FFk-6a-WCa" id="llE-S8-bsS"/>
+                        <outlet property="txtWeight" destination="ZsZ-2A-3tT" id="M3P-Bo-CQi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
