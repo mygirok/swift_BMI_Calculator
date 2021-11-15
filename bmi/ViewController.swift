@@ -12,6 +12,23 @@ class ViewController: UIViewController {
     @IBOutlet var txtWeight: UITextField!
     @IBOutlet var lblResult: UILabel!
     
+    @IBAction func segment(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            
+        } else {
+            
+        }
+    }
+    
+    @IBAction func swichOnOff(_ sender: UISwitch) {
+        if sender.isOn {
+            
+        } else {
+            
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
